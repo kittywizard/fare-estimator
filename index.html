@@ -7,8 +7,38 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1> Fare Estimator</h1>
-    
+    <div class="container">
+        <h1> Fare Estimator</h1>
+        <form id="form">
+            <div class="row">
+                <label for="distance">Distance (in miles):</label>
+                <input type="number" id="distance">
+            </div>
+
+            <h2>What vehicle?</h2>
+            <div class="row">
+                <input type="radio" id="car" name="transport" value="car">
+                <label for="number">Economy Car (1-2 passengers)</label>
+            </div>
+
+            <div class="row">
+                <input type="radio" id="truck" name="transport" value="standard">
+                <label for="number">Standard Car (2-4 passengers)</label>
+            </div>
+
+            <div class="row">
+                <input type="radio" id="truck" name="transport" value="suv">
+                <label for="number">SUV (4+ passengers)</label>
+            </div>
+
+            <div class="row">
+                <input type="radio" id="truck" name="transport" value="luxury">
+                <label for="number">Luxury Vehicle (1-6 passengers)</label>
+            </div>
+
+            <button id="submit">Submit</button>
+        </form> 
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
