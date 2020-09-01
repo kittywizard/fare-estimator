@@ -15,14 +15,22 @@ button.addEventListener('click', checkButtons);
 const radio = document.getElementsByName('transport');
 
 function checkButtons(e) {
+    
+    //need to hide the UI
+
     for(let i = 0; i < radio.length; i++) {
         if(radio[i].checked) {
-            console.log("This button was checked. " + radio[i].value);
+                estimator(radio[i].value);
         }
     }
     e.preventDefault();
 }
 
+function estimator(choice) {
+    //choice is the result of the radio button loop
+
+    console.log(choice);
+}
 for(let i = 0; i <= costPerMile.length; i++) {
 
     estimate = (costPerMin[0] * rideTime) + (costPerMile[0] * distance);
