@@ -30,6 +30,10 @@ function checkButtons(e) {
 
 function estimator(choice) {
     //choice is the result of the radio button loop
+    document.createElement('p');
+    //need to create an element for this and place it into the div. 
+    //so the button doesn't get deleted by the textContent overwrite
+    
     results.textContent = "You picked " + choice;
 
 
