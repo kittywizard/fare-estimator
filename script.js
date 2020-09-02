@@ -13,6 +13,8 @@ const container = document.querySelector('.container');
 const distDisplay = document.getElementById('distance');
 const radio = document.getElementsByName('transport');
 const button = document.getElementById('submit');
+const display = document.querySelector('.display');
+
 button.addEventListener('click', checkButtons);
 
 function checkButtons(e) {
@@ -33,7 +35,7 @@ function estimator(choice) {
     document.createElement('p');
     //need to create an element for this and place it into the div. 
     //so the button doesn't get deleted by the textContent overwrite
-    
+
     results.textContent = "You picked " + choice;
 
 
