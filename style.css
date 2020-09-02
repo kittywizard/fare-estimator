@@ -10,7 +10,13 @@ body {
 .container {
     width: 400px;
     margin: 0 auto;
+    display: block;
 }
+
 h2 {
     margin: 10px 0;
+}
+
+#results {
+    display: none;
 }
