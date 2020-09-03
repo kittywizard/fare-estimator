@@ -1,6 +1,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 0;
+    background-color: #dad5dd;
 }
 
 .row {
@@ -26,6 +27,5 @@ h2 {
 
 /* text */
 .display {
-
-    
+    color: #626291;
 }
